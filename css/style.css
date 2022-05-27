@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { font-family: 'Merriweather', serif; min-height: 100vh; background-color: hsl(216,20%,95%); }
+
+.menu-content { margin: 0 auto; }
+
+.title { display: grid; align-items: center; }
+
+.navigation { display: flex; justify-content: space-between; align-items: center; padding-top: 20px; padding-bottom: 7px; } 
+
+.title-links { display: flex; align-items: center; flex-direction: row; gap: 25px; padding-right: 60px; }
+
+.title-links li { list-style: none; }
+
+.title-links a { color: black; }
+
+.desc { display: flex; justify-content: space-between; align-items: center; padding-top: 50px; }
+
+.main-content h1 { font-size: 56px; padding-bottom: 40px; }
+
+.desc-content,
+.title-container { padding-left: 60px; }
+
+.desc span { padding-top: 30px; }
+
+.project-btn { padding-top: 40px; padding-left: 36.25px; }
+
+.project-btn button,
+.about-btn button { border-color: rgba(245, 18, 18, 0.842); }
+
+.photo,
+.main-links { padding-right: 60px; }
+
+.photo img { border-radius: 24px; }
+
+.navbar { width: 300px; height: 100vh; position: fixed; margin-left: -650px; background-color: rgba(245, 18, 18, 0.842);
+        transition: 0.4s; color: hsl(0,0%,30%);}
+
+.navbar-nav p { color: #ffffff; font-size: 12px; padding-left: 25px; padding-top: 50px; }
+
+.navbar-toggler { padding-top: 25px; }
+
+.nav-link { font-size: 16px; }
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover { background-color: #00000026; }
+
+.my-container { transition: 0.4s; }
+
+.active-nav { margin-left: 0; }
+
+/* for main section */
+
+.active-cont { margin-left: 250px; }
+
+.aboutContent { padding-top: 200px; padding-left: 96.25px; }
+
+.about-btn { padding-top: 40px; padding-left: 96.25px; }
+
+.skills-content { padding-left: 96.25px; padding-top: 200px; }
+
+.skills-col { margin: 0 auto; }
+
+
+@media only screen and (max-width: 992px) {
+    
+  
+
+    .navigation { display: flex; flex-direction: column; padding-top: 20px; padding-bottom: 7px; }
+
+    .title-links { display: flex; align-items: center; justify-content: center; flex-direction: row; gap: 25px;  }
+
+    .desc { display: flex; flex-direction: column-reverse; justify-content: center; gap: 50px; }
+
+    .title { text-align: center; } 
+
+    .title h1 { font-size: 36px; }
+
+    .photo { padding: 0; margin: auto; }
+
+    .about-btn { text-align: center; }
+
+
+}
