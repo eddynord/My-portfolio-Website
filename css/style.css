@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-body { font-family: 'Merriweather', serif; min-height: 100vh; background-color: hsl(216,20%,95%); }
+body { font-family: 'Raleway', sans-serif; min-height: 100vh; background-color: hsl(216,20%,95%); }
 
 .menu-content { margin: 0 auto; }
 
@@ -62,7 +62,8 @@ body { font-family: 'Merriweather', serif; min-height: 100vh; background-color: 
 
 .skills-content { padding-left: 96.25px; padding-top: 200px; }
 
-.skills-col { margin: 0 auto; }
+.skills-col { margin: 0 auto; padding-top: 40px;  }
+ .d-flex { display: flex; align-items: center; justify-content: center;}
 
 
 @media only screen and (max-width: 992px) {

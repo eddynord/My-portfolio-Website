@@ -31,19 +31,19 @@
                   </a>
                     <hr>
                     <li class="nav-item w-100">
-                        <a href="#" class="nav-link text-light pl-4">
+                        <a href="mailto: edwin.nord@protonmail.com" class="nav-link text-light pl-4">
                           <i class="fas fa-envelope"></i><span>&nbsp; &nbsp;edwin.nord@protonmail.com</span>
                         </a>
                     </li>
                     <hr>
                     <li class="nav-item w-100">
-                        <a href="#" class="nav-link text-light pl-4">
+                        <a href="https://github.com/eddynord?tab=repositories" class="nav-link text-light pl-4">
                           <i class="fab fa-github"></i><span>&nbsp; &nbsp;Github</span>
                         </a>
                     </li>
                     <hr>
                     <li class="nav-item w-100">
-                        <a href="#" class="nav-link text-light pl-4">
+                        <a href="https://www.linkedin.com/in/edwin-nord-159884240/" class="nav-link text-light pl-4">
                           <i class="fab fa-linkedin"></i><span>&nbsp; &nbsp;Linkedin</span>
                         </a>
                     </li>
@@ -58,20 +58,22 @@
               <div class="content">
                 <div class="title">
                   <div class="title-content">
-                    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-                      <i class="fas fa-bars"></i>
-                    </button>
+                    
                     <div class="navigation">
                       
                       
+                      
                       <div class="title-container">
+                        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                          <i class="fas fa-bars"></i>
+                        </button>
                         <span><strong>Edwin Nord <span style="color: rgba(245, 18, 18, 0.842) ;">|</span> </strong>Web Developer</span>
                       </div>
                       
                       <div class="title-links">
-                        <a href="#"><i class="fa fa-envelope"></i></a><span style="color: rgba(245, 18, 18, 0.842) ;">|</span>
-                        <a href="#"><i class="fab fa-github"></i></a><span style="color: rgba(245, 18, 18, 0.842) ;">|</span>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto : edwin.nord@protonmail.com "><i class="fa fa-envelope"></i></a><span style="color: rgba(245, 18, 18, 0.842) ;">|</span>
+                        <a href="https://github.com/eddynord?tab=repositories"><i class="fab fa-github"></i></a><span style="color: rgba(245, 18, 18, 0.842) ;">|</span>
+                        <a href="https://www.linkedin.com/in/edwin-nord-159884240/"><i class="fab fa-linkedin"></i></a>
                       </div>
                     </div>
   
@@ -94,7 +96,7 @@
                       </div>
                       
                       <div class="project-btn">
-                          <a href="#">  
+                          <a href="https://github.com/eddynord?tab=repositories">  
                             <button type="button" class="btn btn-lg btn-outline-dark" data-mdb-ripple-color="dark"><span style="color: rgba(245, 18, 18, 0.842) ;"><strong><</strong></span> VIEW PROJECTS<span style="color: rgba(245, 18, 18, 0.842) ;"><strong>/></strong></span></button>
                           </a> 
                       </div>
@@ -131,7 +133,7 @@
                       <div class="d-flex align-items-center mb-3" style="height: 100px;">
                         <div class="col"><img src="/img/bootstrap.png" alt="#" width="64"></div>
                         <div class="col">
-                          <img src="/img/html.png" alt="#" width="64">
+                          <img src="/img/html.png" alt="#" width="60">
                           <div><label for="html email"> <strong>HTML EMAIL</strong> </label></div>
                         
                         </div>
@@ -150,8 +152,34 @@
               </div>
   
               </div>
+
+              <button class="open-button" onclick="openForm()">GET IN TOUCH</button>
+
+            <div class="chat-popup" id="myForm">
+              <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+              </form>
+            </div>
             </section>  
               
+
+            
             
             
 
@@ -193,6 +221,8 @@
           sidebar.classList.toggle("active-nav")
           
         })
+
+        
 
      
     </script>
