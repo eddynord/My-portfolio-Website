@@ -52,6 +52,10 @@ body { font-family: 'Raleway', sans-serif; min-height: 100vh; background-color: 
 
 .active-nav { margin-left: 0; }
 
+.d-flex { display: flex; align-items: center;
+
+}
+
 /* for main section */
 
 .active-cont { margin-left: 250px; }
