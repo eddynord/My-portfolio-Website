@@ -6,7 +6,7 @@ body { font-family: 'Raleway', sans-serif; min-height: 100vh; background-color: 
 
 .menu-content { margin: 0 auto; }
 
-.title { display: grid; align-items: center; }
+/* .title { display: grid; align-items: center; } */
 
 .title-container {
     color: #000000;
@@ -17,7 +17,18 @@ body { font-family: 'Raleway', sans-serif; min-height: 100vh; background-color: 
 
 /* .navigation { display: flex; justify-content: space-between; align-items: center; padding-top: 20px; padding-bottom: 20px; }  */
 
-.navigation { text-align: center; padding-top: 20px; padding-bottom: 20px; }
+.navigation {   
+                text-align: center; 
+                padding-top: 20px; 
+                padding-bottom: 20px; 
+                position:fixed; 
+                transition: all 0.8s ease-in-out;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: #000000;
+
+ }
 
 .title-links {
     display: flex; justify-content: center; align-items: center; flex-direction: row; gap: 25px; padding-top: 20px;
@@ -31,7 +42,7 @@ body { font-family: 'Raleway', sans-serif; min-height: 100vh; background-color: 
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    border: thin solid red;
+   
     text-align: center;
     color: #000000;
 }
@@ -42,7 +53,11 @@ body { font-family: 'Raleway', sans-serif; min-height: 100vh; background-color: 
     letter-spacing: 2px;
 }
 
-.desc { display: flex; justify-content: space-between; align-items: center; padding-top: 50px; }
+.desc { display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding-top: 200px; 
+    }
 
 
 
@@ -65,9 +80,19 @@ body { font-family: 'Raleway', sans-serif; min-height: 100vh; background-color: 
 .navbar { width: 300px; height: 100vh; position: fixed; margin-left: -300px;  background-color: rgba(245, 18, 18, 0.842);
         transition: 0.8s; color: hsl(0,0%,30%);}
 
-.navbar-nav{
+.navigation.active {
+    background-color: transparent;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
     
+} 
 
+.navigation.active span {
+    color: #000000;
+}
+
+.navigation.active a {
+    color: #000000;
 }
 
 .navbar-nav p { color: #ffffff; font-size: 12px; text-align: center; padding-top: 50px; }
